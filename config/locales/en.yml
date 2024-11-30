@@ -28,4 +28,8 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  user:
+    heading_list: "Users"
+    label_age: "Age: "
+    label_updated_at: "Last modification: "
+
