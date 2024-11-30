@@ -26,7 +26,7 @@
 
 /* Hover effect to make the card pop */
 .user-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.1, 1.1);
     box-shadow: 0 6px 15px var(--hover-shadow-color);
 }
 
