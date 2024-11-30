@@ -1,3 +1,9 @@
+:root {
+    --date-text-color: #888;
+    /* Light gray for date text */
+    --separator-color: #ddd;
+}
+
 .user-page {
     display: flex;
     flex-flow: column;
@@ -29,8 +35,10 @@
     font-size: 1.2em;
     font-weight: bold;
     color: var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
     text-align: center;
+    border-bottom: var(--separator-color) 1px solid;
 }
 
 /* Styles for user age */
