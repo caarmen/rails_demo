@@ -1,6 +1,6 @@
 <h1>Users</h1>
 <ul>
   <% @users.each do |user| %>
-    <li><%= user.name %> (<%= user.age %>) - <%= user.updated_at %></li>
+    <li><%= user.name %> (<%= user.age %>) - <%= format_updated_at(user) %></li>
   <% end %>
 </ul>
