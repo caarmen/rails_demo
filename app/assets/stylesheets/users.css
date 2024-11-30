@@ -27,7 +27,6 @@
     box-shadow: 0 4px 8px var(--hover-shadow-color);
     width: 250px;
     padding: 15px;
-    text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -43,6 +42,7 @@
     font-weight: bold;
     color: var(--primary-color);
     margin-bottom: 8px;
+    text-align: center;
 }
 
 /* Styles for user age */
