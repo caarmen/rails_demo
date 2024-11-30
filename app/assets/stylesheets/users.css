@@ -9,6 +9,11 @@
     flex-flow: column;
     align-items: center;
 }
+.user-count {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 0.8em;
+}
 .user-list {
     margin-top: 16px;
     display: flex;

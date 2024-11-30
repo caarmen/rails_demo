@@ -1,6 +1,7 @@
 <%= stylesheet_link_tag 'users', media: 'all' %>
 <div class="user-page">
   <h1><%= t('user.heading_list') %></h1>
+  <div class="user-count"><%= t('user.count', count:@count) %></div>
   <div class="select-options">
     <label for="sort-field"><%= t('user.label_sort') %></label>
     <select id="sort-field" name="sort" onchange="window.location.href=this.value">

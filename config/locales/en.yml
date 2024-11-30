@@ -30,6 +30,7 @@
 en:
   user:
     heading_list: "Users"
+    count: "Found %{count} users."
     label_age: "Age: "
     label_updated_at: "Last modification: "
     label_sort: "Sort"
