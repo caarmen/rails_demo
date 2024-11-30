@@ -1,13 +1,13 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project to accompany a presentation about `git bisect`.
 
-Things you may want to cover:
+It has a bug introduced somewhere in the git history, regarding date formatting.
+
+The branch `git-bisect-notes` has a script to use with `git bisect` to find the bug.
 
 * Ruby version
-
-* System dependencies
+3.3.6
 
 * Configuration
 
@@ -25,13 +25,7 @@ bin/rails db:migrate
 bin/rails db:seed
 ```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
 * Deployment instructions
 ```
 bin/rails server
 ```
-
-* ...
