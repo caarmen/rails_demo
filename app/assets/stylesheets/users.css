@@ -24,6 +24,10 @@
     flex-flow: column;
     align-items: center;
 }
+.user-list {
+    margin-top: 16px;
+}
+
 /* Style for individual user cards */
 .user-card {
     background-color: var(--background-color);

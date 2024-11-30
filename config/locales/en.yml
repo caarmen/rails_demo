@@ -32,4 +32,8 @@ en:
     heading_list: "Users"
     label_age: "Age: "
     label_updated_at: "Last modification: "
+    label_sort: "Sort"
+    label_sort_item_name: "Name"
+    label_sort_item_age: "Age"
+    label_sort_item_updated_at: "Last modification"
 

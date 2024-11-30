@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.order(name: :asc)
+    @sort_field = params[:sort].presence_in(%w[name age updated_at]) || 'name'
+    @users = User.order(@sort_field => :asc)
   end
 end
