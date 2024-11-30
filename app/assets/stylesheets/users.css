@@ -1,22 +1,7 @@
 :root {
-    --primary-color: #3498db;
-    /* Blue */
-    --secondary-color: #2ecc71;
-    /* Green */
-    --accent-color: #f39c12;
-    /* Yellow */
-    --text-color: #333;
-    /* Dark gray for text */
-    --muted-text-color: #777;
-    /* Light gray for less important text */
-    --background-color: #fff;
-    /* White background */
-    --card-border-color: #ddd;
-    /* Light gray for card borders */
-    --hover-shadow-color: rgba(0, 0, 0, 0.1);
-    /* Shadow color for hover effects */
     --date-text-color: #888;
     /* Light gray for date text */
+    --separator-color: #ddd;
 }
 
 .user-page {
@@ -26,22 +11,26 @@
 }
 .user-list {
     margin-top: 16px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 8px;
 }
 
 /* Style for individual user cards */
 .user-card {
-    background-color: var(--background-color);
+    background-color: var(--surface-color);
     border: 1px solid var(--card-border-color);
     border-radius: 8px;
     box-shadow: 0 4px 8px var(--hover-shadow-color);
-    width: 250px;
+    width: 280px;
     padding: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Hover effect to make the card pop */
 .user-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.1, 1.1);
     box-shadow: 0 6px 15px var(--hover-shadow-color);
 }
 
@@ -50,8 +39,10 @@
     font-size: 1.2em;
     font-weight: bold;
     color: var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
     text-align: center;
+    border-bottom: var(--separator-color) 1px solid;
 }
 
 /* Styles for user age */
