@@ -1,13 +1,15 @@
 <%= stylesheet_link_tag 'users', media: 'all' %>
-<h1><%= t('user.heading_list') %></h1>
-<% @users.each do |user| %>
-<div class="user-card">
-  <div class="user-card__name"><%= user.name %></div>
-  <div class="user-card__age">
-    <strong><%= t('user.label_age') %></strong><%= user.age %>
+<div class="user-page">
+  <h1><%= t('user.heading_list') %></h1>
+  <% @users.each do |user| %>
+  <div class="user-card">
+    <div class="user-card__name"><%= user.name %></div>
+    <div class="user-card__age">
+      <strong><%= t('user.label_age') %></strong><%= user.age %>
+    </div>
+    <div class="user-card__updated_at">
+      <strong><%= t('user.label_updated_at') %></strong><%= format_updated_at(user) %>
+    </div>
   </div>
-  <div class="user-card__updated_at">
-    <strong><%= t('user.label_updated_at') %></strong><%= format_updated_at(user) %>
-  </div>
+  <% end %>
 </div>
-<% end %>

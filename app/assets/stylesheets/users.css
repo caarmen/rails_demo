@@ -19,6 +19,11 @@
     /* Light gray for date text */
 }
 
+.user-page {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
 /* Style for individual user cards */
 .user-card {
     background-color: var(--background-color);
