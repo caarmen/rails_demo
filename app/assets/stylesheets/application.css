@@ -14,29 +14,4 @@
  *= require_self
  */
 
-:root {
-    --primary-color: #3498db;
-    /* Blue */
-    --secondary-color: #2ecc71;
-    /* Green */
-    --accent-color: #f39c12;
-    /* Yellow */
-    --text-color: #333;
-    /* Dark gray for text */
-    --muted-text-color: #777;
-    /* Light gray for less important text */
-    --surface-color: #fff;
-    /* White background */
-    --background-color: #eee;
-    /* White background */
-    --card-border-color: #ddd;
-    /* Light gray for card borders */
-    --hover-shadow-color: rgba(0, 0, 0, 0.1);
-    /* Shadow color for hover effects */
-}
 
-
- body {
-    background-color: var(--background-color);
-    font-family: sans-serif;
- }

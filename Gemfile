@@ -45,3 +45,5 @@ group :test do
   gem "rails-controller-testing"
   gem "selenium-webdriver"
 end
+
+gem "tailwindcss-rails", "~> 3.0"
