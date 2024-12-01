@@ -13,3 +13,19 @@ Pre-requisites:
 To setup the project, run `./setup.sh`.
 
 To run the server, run `bin/rails server`.
+
+## Docker
+To build the docker image:
+```bash
+docker build -t railsdemo .
+```
+
+To run the docker image:
+
+```bash
+docker run -e SECRET_KEY_BASE=anything -p3000:3000 -v $(pwd)/storage:/rails/storage railsdemo
+```
+
+This will create a database in `storage/production.sqlite3` without any data in it.
+
+TODO: Populate the database with some data for the docker image.
