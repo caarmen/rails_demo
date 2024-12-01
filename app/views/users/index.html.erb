@@ -1,8 +1,7 @@
-<%= stylesheet_link_tag 'users', media: 'all' %>
-<div class="user-page">
+<div class="">
   <h1><%= t('user.heading_list') %></h1>
-  <div class="user-count"><%= t('user.count', count:@count) %></div>
-  <div class="select-options">
+  <div class=""><%= t('user.count', count:@count) %></div>
+  <div class="">
     <label for="sort-field"><%= t('user.label_sort') %></label>
     <select id="sort-field" name="sort" onchange="window.location.href=this.value">
       <option value="<%= users_path(sort: 'name')%>" <%='selected' if @sort_field == 'name' %>><%= t('user.label_sort_item_name')%></option>
@@ -10,14 +9,14 @@
       <option value="<%= users_path(sort: 'updated_at')%>" <%='selected' if @sort_field == 'updated_at'%>><%= t('user.label_sort_item_updated_at')%></option>
     </select>
   </div>
-  <div class="user-list">
+  <div class="">
     <% @users.each do |user| %>
-    <div class="user-card">
-      <div class="user-card__name"><%= user.name %></div>
-      <div class="user-card__age">
+    <div class="">
+      <div class=""><%= user.name %></div>
+      <div class="">
         <strong><%= t('user.label_age') %></strong><%= user.age %>
       </div>
-      <div class="user-card__updated_at">
+      <div class="">
         <strong><%= t('user.label_updated_at') %></strong><%= format_updated_at(user) %>
       </div>
     </div>
