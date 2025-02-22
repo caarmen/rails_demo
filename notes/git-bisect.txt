@@ -1,0 +1,4 @@
+* The `main` branch has a bug. It has strange dates appearing. Dates with invalid months.
+* The last release (tag) was `v1.0.2`. It has normal dates.
+* To test each commits: load the page and see if the dates look "normal".
+  - Can look for a specific date from the v1.0.2 release.
